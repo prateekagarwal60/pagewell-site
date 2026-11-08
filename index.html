@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagewell Access: accessibility audits for online stores</title>
+<meta name="description" content="Hand-tested WCAG 2.1 and 2.2 Level AA audits of an online store's main pages and checkout, with a fix list your developer can work from and a re-test. $1,500 fixed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b4f8a'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='700' fill='%23fff' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1b1f24;
+    --muted: #444c56;
+    --rule: #d0d7de;
+    --band: #f3f6f9;
+    --link: #0b4f8a;
+    --focus: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161b;
+      --text: #eef1f4;
+      --muted: #c3cad2;
+      --rule: #3a434d;
+      --band: #1b2128;
+      --link: #8cc4ff;
+      --focus: #ffb4a9;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible, :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  .skip {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    padding: 0.5rem 0.875rem;
+    background: var(--bg);
+    color: var(--link);
+    border: 2px solid var(--link);
+    z-index: 10;
+  }
+  .skip:focus { top: 1rem; }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1rem; }
+  header.site { border-bottom: 1px solid var(--rule); }
+  header.site .wrap { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .brand { font-weight: 700; font-size: 1.125rem; letter-spacing: 0.01em; margin: 0; }
+  main { padding: 2.5rem 0 3rem; }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1rem; }
+  .lede { font-size: 1.1875rem; color: var(--muted); margin: 0 0 2rem; }
+  h2 { font-size: 1.3125rem; line-height: 1.35; margin: 2.25rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.375rem; }
+  .price { background: var(--band); border: 1px solid var(--rule); border-radius: 6px; padding: 1rem 1.25rem; }
+  .price p:last-child { margin-bottom: 0; }
+  footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9375rem; }
+  footer.site .wrap { padding-top: 1.25rem; padding-bottom: 2rem; }
+  @media (max-width: 30rem) {
+    h1 { font-size: 1.625rem; }
+    main { padding-top: 1.75rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site">
+  <div class="wrap">
+    <p class="brand">Pagewell Access</p>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <div class="wrap">
+    <h1>Pagewell Access: accessibility audits for online stores</h1>
+    <p class="lede">A hand-tested audit of your store against the web accessibility standard (WCAG), with a fix list your developer can work from.</p>
+
+    <h2>What you get</h2>
+    <ul>
+      <li>A hand-tested audit of your store's main pages (up to 10 page types) and checkout against WCAG 2.1 and 2.2 Level AA.</li>
+      <li>Automated checks first, then testing by hand with a keyboard and the NVDA and VoiceOver screen readers.</li>
+      <li>A report your developer can work from: every issue, where it is, which WCAG rule it breaks, how serious it is and how to fix it.</li>
+      <li>One re-test of the fixed items within 30 days.</li>
+    </ul>
+
+    <h2>Price</h2>
+    <div class="price">
+      <p><strong>$1,500 fixed</strong>, half before work starts and half at delivery, in 10 business days.</p>
+      <p>Monthly re-testing after the audit: <strong>$800 a month</strong>, three-month minimum, then month to month. Each month: a re-test of the checkout and the top page types, testing of up to 5 new or changed pages, fix guidance by email and a dated report of what was tested, what is open and what was fixed.</p>
+    </div>
+
+    <h2>What isn't included</h2>
+    <p>Legal advice. A site is never called "ADA compliant" or "certified" here (no such certification exists), and an audit can't promise how any claim ends. If you have a claim, talk to your attorney first; I can work with them or with you, whichever they prefer.</p>
+
+    <h2>Who I am</h2>
+    <p>Pagewell Access is run by its founder, Prateek Agarwal: an engineer (IIT Delhi, computer science; ex-Amazon, Microsoft) and former B2B software product manager.</p>
+
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:hello@pagewellaccess.com">hello@pagewellaccess.com</a>.</p>
+
+    <h2>Accessibility</h2>
+    <p>This page was checked against WCAG 2.2 Level AA on November 8, 2026, with automated checks and a keyboard walk-through. If anything here is hard to use, write to <a href="mailto:hello@pagewellaccess.com">hello@pagewellaccess.com</a>.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Pagewell Access</p>
+  </div>
+</footer>
+</body>
+</html>
